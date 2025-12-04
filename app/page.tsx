@@ -1,65 +1,240 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="w-full">
+      {/* HERO SECTION */} 
+      <section
+        className="
+        h-[90vh] 
+        bg-[url('https://res.cloudinary.com/dlzjjxtsd/image/upload/The-Most-Important-Construction-Safety-Tips_du9tfd.jpg')]
+        bg-cover bg-center 
+        relative
+      "
+      >
+        <div className="absolute inset-0 bg-black/50"></div>
+
+        <div className="relative z-10 h-full flex flex-col justify-center items-start px-6 md:px-16 text-white">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-4xl md:text-6xl font-bold leading-tight"
           >
+            Precision Surveying & <br /> Geospatial Engineering
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="mt-4 text-lg md:text-xl max-w-xl"
+          >
+            We offer accurate land surveys, engineering measurements, drone
+            mapping, and geospatial solutions for construction, planning and
+            development.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.8 }}
+            className="mt-6 flex space-x-4"
+          >
+            <Link
+              href="/quote"
+              className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition"
+            >
+              Request a Quote
+            </Link>
+
+            <Link
+              href="/services/LandSurvey"
+              className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition"
+            >
+              View Services
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* SERVICES SECTION */}
+      <section className="py-20 px-6 md:px-16 bg-gray-100">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Our Surveying Services
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {[
+            {
+              title: "Land Surveying",
+              desc: "Boundary, subdivision, property demarcation and development planning.",
+            },
+            {
+              title: "Drone Mapping (Aerial Survey)",
+              desc: "High resolution drone images, 3D mapping, photogrammetry & orthomosaics.",
+            },
+            {
+              title: "Topographic Survey",
+              desc: "Detailed terrain data for engineering design and architectural planning.",
+            },
+            {
+              title: "Geodetic Survey",
+              desc: "Precise coordinate measurement using GNSS, control points and leveling.",
+            },
+            {
+              title: "Engineering Survey",
+              desc: "Setting out buildings, roads, bridges, drainage and construction layouts.",
+            },
+            {
+              title: "GIS & Mapping",
+              desc: "Spatial analysis, mapping solutions, data collection and digitization.",
+            },
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white p-6 shadow-lg rounded-xl hover:-translate-y-2 transition"
+            >
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-600">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ABOUT SECTION */}
+      <section className="py-20 px-6 md:px-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">About Us</h2>
+            <p className="text-gray-700 leading-relaxed">
+              We are a certified surveying and geospatial company specializing
+              in land measurement, mapping, and engineering support services.
+              With modern GNSS equipment, drones, and experienced engineers, we
+              deliver highly accurate results for both private and government
+              projects.
+            </p>
+
+            <p className="mt-4 text-gray-700 leading-relaxed">
+              Our commitment is precision, safety, and professional excellence
+              across every project.
+            </p>
+
+            <Link
+              href="/about"
+              className="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            >
+              Learn More
+            </Link>
+          </div>
+
+          <div className="rounded-xl overflow-hidden shadow-lg relative w-full h-[350px]">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="https://res.cloudinary.com/dlzjjxtsd/image/upload/download-68_pxxunp.jpg"
+              alt="Surveyor"
+              fill
+              className="object-cover"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* PORTFOLIO PREVIEW */}
+      <section className="py-20 px-6 md:px-16 bg-gray-50">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Recent Projects
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-10">
+          {[
+            "Road Construction Set-Out",
+            "Drone Mapping for Estate Development",
+            "Topographic Survey for Site Planning",
+          ].map((title, i) => (
+            <div
+              key={i}
+              className="bg-white shadow-lg rounded-xl overflow-hidden"
+            >
+              <div className="relative h-48">
+                <Image
+                  src="/project-placeholder.jpg"
+                  alt="Project Image"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold text-lg">{title}</h3>
+                <p className="text-gray-600 text-sm mt-2">
+                  High-precision fieldwork done with modern surveying
+                  technologies.
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Link
+            href="/projects"
+            className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+          >
+            View Full Portfolio
+          </Link>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="py-20 px-6 md:px-16 bg-blue-900 text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Why Choose Us?
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-10 text-center">
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Precision</h3>
+            <p className="text-gray-300">
+              We use GNSS, drones, and total stations for maximum accuracy.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Experience</h3>
+            <p className="text-gray-300">
+              Over 10 years of delivering professional surveying solutions.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-semibold mb-2">Fast Delivery</h3>
+            <p className="text-gray-300">
+              Efficient workflow ensures quick project turnaround.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="py-20 px-6 md:px-16 bg-yellow-400 text-black text-center">
+        <h2 className="text-3xl md:text-4xl font-bold">
+          Ready to Start Your Project?
+        </h2>
+        <p className="mt-4 text-lg max-w-2xl mx-auto">
+          Contact us today for accurate and reliable surveying solutions tailored
+          to your needs.
+        </p>
+
+        <Link
+          href="/quote"
+          className="mt-6 inline-block bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition"
+        >
+          Get a Free Quote
+        </Link>
+      </section>
     </div>
   );
 }
