@@ -10,7 +10,7 @@ export default function LandSurvey() {
       {/* HERO */}
       <section className="relative h-[60vh] bg-gray-900">
         <Image
-          src="/land-survey-hero.jpg"
+          src="https://res.cloudinary.com/dlzjjxtsd/image/upload/land-surveying-for-dummies_lo82xi.jpg"
           alt="Land Surveying"
           fill
           className="object-cover opacity-60"
@@ -54,7 +54,7 @@ export default function LandSurvey() {
         <div className="grid md:grid-cols-2 gap-10 mt-12">
           <div>
             <Image
-              src="/land-survey-worker.jpg"
+              src="https://res.cloudinary.com/dlzjjxtsd/image/upload/1st_Horizon_D1-9444-1024x683_s0ftz4.jpg"
               alt="Survey Team"
               width={600}
               height={400}
@@ -75,7 +75,7 @@ export default function LandSurvey() {
 
             <Link
               href="/quote"
-              className="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+              className="mt-6 inline-block bg-[#C62127] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A51B1E] transition"
             >
               Request a Land Survey
             </Link>
@@ -161,7 +161,7 @@ export default function LandSurvey() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-20 px-6 md:px-20 bg-blue-900 text-white text-center">
+      <section className="py-20 px-6 md:px-20 bg-[#4A7E51] text-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold">
           Need a Land Survey for Your Property?
         </h2>
@@ -173,7 +173,7 @@ export default function LandSurvey() {
 
         <Link
           href="/contact"
-          className="mt-8 inline-block bg-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition"
+          className="mt-8 inline-block bg-[#C62127] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#A51B1E] transition"
         >
           Contact Us Now
         </Link>

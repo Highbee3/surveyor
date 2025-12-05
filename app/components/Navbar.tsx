@@ -3,19 +3,30 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-blue-900 text-white p-4 shadow-md fixed top-0 z-50">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="w-full bg-[#4A7E51] text-white shadow-md fixed top-0 z-50">
+      <div className="container mx-auto flex justify-between items-center h-20 px-4 md:px-8">
         {/* Logo */}
-        <div className="text-2xl font-bold tracking-wide">SurveyPro</div>
+          <Link href="/">
+        <div className="h-16 w-auto flex items-center">
+          <Image
+            src="https://res.cloudinary.com/dlzjjxtsd/image/upload/Screenshot_26_uz8qyw.png"
+            alt="SurveyPro Logo"
+            width={200}
+            height={200}
+            className="h-full w-auto object-contain"
+          />
+        </div>
+            </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-lg items-center">
+        <ul className="hidden md:flex space-x-8 text-lg font-medium items-center">
           <li className="group relative">
             <Link href="/" className="relative">
               Home
@@ -34,12 +45,7 @@ export default function Navbar() {
             </button>
 
             {dropdownOpen && (
-              <ul
-                className="absolute top-8 left-0 bg-white text-black shadow-md p-3 rounded-md w-56 
-    space-y-2 transition-all duration-300 ease-out 
-    opacity-100 translate-y-0 
-    animate-dropdown"
-              >
+              <ul className="absolute top-10 left-0 bg-white text-black shadow-md p-3 rounded-md w-56 space-y-2 animate-dropdown">
                 <li className="p-2 hover:bg-gray-200 rounded">
                   <Link href="/services/LandSurvey">Land Survey</Link>
                 </li>
@@ -47,14 +53,10 @@ export default function Navbar() {
                   <Link href="/services/dronesurvey">Drone Survey</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/topographic-survey">
-                    Topographic Survey
-                  </Link>
+                  <Link href="/services/topographic-survey">Topographic Survey</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/boundary">
-                    Boundary Mapping
-                  </Link>
+                  <Link href="/services/boundary">Boundary Mapping</Link>
                 </li>
               </ul>
             )}
@@ -80,11 +82,6 @@ export default function Navbar() {
               <span className="underline-hover"></span>
             </Link>
           </li>
-
-          {/* CTA Button */}
-          <li>
-         
-          </li>
         </ul>
 
         {/* Hamburger (Mobile) */}
@@ -98,43 +95,48 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-  <ul
-    className="md:hidden bg-blue-800 p-4 mt-3 rounded-lg space-y-4 text-lg 
-    animate-mobileMenu"
-  >
-    <li><Link href="/">Home</Link></li>
+        <ul className="md:hidden bg-[#4A7E51] p-4 space-y-4 animate-mobileMenu">
+          <li>
+            <Link href="/">Home</Link>
+          </li>
 
-    <li>
-      <button
-        onClick={() => setDropdownOpen(!dropdownOpen)}
-        className="flex items-center"
-      >
-        Services <FiChevronDown className="ml-2" />
-      </button>
+          <li>
+            <button
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className="flex items-center w-full justify-between"
+            >
+              Services <FiChevronDown className="ml-2" />
+            </button>
 
-      {dropdownOpen && (
-        <ul
-          className="ml-4 mt-2 space-y-2 bg-blue-700 p-3 rounded 
-          animate-dropdown"
-        >
-          <li><Link href="/services/LandSurvey">Land Survey</Link></li>
-          <li><Link href="/services/dronesurvey">Drone Survey</Link></li>
-          <li><Link href="/services/topographic-survey">Topographic Survey</Link></li>
-          <li><Link href="/services/boundary">Boundary Mapping</Link></li>
+            {dropdownOpen && (
+              <ul className="ml-4 mt-2 space-y-2 bg-green-700 p-3 rounded animate-dropdown">
+                <li>
+                  <Link href="/services/LandSurvey">Land Survey</Link>
+                </li>
+                <li>
+                  <Link href="/services/dronesurvey">Drone Survey</Link>
+                </li>
+                <li>
+                  <Link href="/services/topographic-survey">Topographic Survey</Link>
+                </li>
+                <li>
+                  <Link href="/services/boundary">Boundary Mapping</Link>
+                </li>
+              </ul>
+            )}
+          </li>
+
+          <li>
+            <Link href="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link href="/equipment">Equipment</Link>
+          </li>
+          <li>
+            <Link href="/contact">Contact</Link>
+          </li>
         </ul>
       )}
-    </li>
-
-    <li><Link href="/projects">Projects</Link></li>
-    <li><Link href="/equipment">Equipment</Link></li>
-    <li><Link href="/contact">Contact</Link></li>
-
-    {/* CTA */}
-    <li>
-    
-    </li>
-  </ul>
-)}
 
       {/* Hover underline animation */}
       <style>{`
@@ -152,49 +154,18 @@ export default function Navbar() {
         .group:hover .underline-hover {
           transform: scaleX(1);
         }
-           @keyframes dropdown {
-    0% {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
-  .animate-dropdown {
-    animation: dropdown 0.3s ease-out forwards;
-  }
-      /* Dropdown (already added) */
-  @keyframes dropdown {
-    0% {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .animate-dropdown {
-    animation: dropdown 0.3s ease-out forwards;
-  }
+        @keyframes dropdown {
+          0% { opacity: 0; transform: translateY(-10px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-dropdown { animation: dropdown 0.3s ease-out forwards; }
 
-  /* Mobile Menu Slide Down */
-  @keyframes mobileMenu {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .animate-mobileMenu {
-    animation: mobileMenu 0.35s ease-out forwards;
-  }
+        @keyframes mobileMenu {
+          0% { opacity: 0; transform: translateY(-20px); }
+          100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-mobileMenu { animation: mobileMenu 0.35s ease-out forwards; }
       `}</style>
     </nav>
   );

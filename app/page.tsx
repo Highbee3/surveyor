@@ -45,16 +45,11 @@ export default function Home() {
             transition={{ delay: 0.6, duration: 0.8 }}
             className="mt-6 flex space-x-4"
           >
-            <Link
-              href="/quote"
-              className="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition"
-            >
-              Request a Quote
-            </Link>
+          
 
             <Link
               href="/services/LandSurvey"
-              className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition"
+              className="border border-[#C62127] px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition"
             >
               View Services
             </Link>
@@ -126,7 +121,7 @@ export default function Home() {
 
             <Link
               href="/about"
-              className="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+              className="mt-6 inline-block bg-[#C62127] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
             >
               Learn More
             </Link>
@@ -161,7 +156,7 @@ export default function Home() {
             >
               <div className="relative h-48">
                 <Image
-                  src="/project-placeholder.jpg"
+                  src="https://res.cloudinary.com/dlzjjxtsd/image/upload/land-surveying-for-dummies_lo82xi.jpg"
                   alt="Project Image"
                   fill
                   className="object-cover"
@@ -181,15 +176,15 @@ export default function Home() {
         <div className="text-center mt-10">
           <Link
             href="/projects"
-            className="bg-blue-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition"
+            className="bg-[#C62127] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A51B1E] transition"
           >
-            View Full Portfolio
+            View Full Projects
           </Link>
         </div>
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-20 px-6 md:px-16 bg-blue-900 text-white">
+      <section className="py-20 px-6 md:px-16 bg-[#4A7E51] text-white">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Why Choose Us?
         </h2>
@@ -219,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-20 px-6 md:px-16 bg-yellow-400 text-black text-center">
+      <section className="py-20 px-6 md:px-16 bg-[#C62127] text-white text-center">
         <h2 className="text-3xl md:text-4xl font-bold">
           Ready to Start Your Project?
         </h2>

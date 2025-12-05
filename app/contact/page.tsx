@@ -42,7 +42,7 @@ export default function Contact() {
               <FaEnvelope className="text-red-400 text-xl mt-1" />
               <div>
                 <p className="font-medium">Email</p>
-                <p className="text-gray-300">example@email.com</p>
+                <p className="text-gray-300">Ibrahimademola145@gmail.com</p>
               </div>
             </div>
 
@@ -70,7 +70,7 @@ export default function Contact() {
               <label className="block mb-1 text-gray-300">Name</label>
               <input
                 type="text"
-                className="w-full p-3 bg-black/30 border border-white/20 rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 bg-black/30 border border-white/20 rounded-lg outline-none focus:ring-2 focus:ring-[#C62127]"
                 placeholder="Your Name"
               />
             </div>
@@ -79,7 +79,7 @@ export default function Contact() {
               <label className="block mb-1 text-gray-300">Email</label>
               <input
                 type="email"
-                className="w-full p-3 bg-black/30 border border-white/20 rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 bg-black/30 border border-white/20 rounded-lg outline-none focus:ring-2 focus:ring-[#C62127]"
                 placeholder="Your Email"
               />
             </div>
@@ -88,14 +88,14 @@ export default function Contact() {
               <label className="block mb-1 text-gray-300">Message</label>
               <textarea
                 rows={4}
-                className="w-full p-3 bg-black/30 border border-white/20 rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 bg-black/30 border border-white/20 rounded-lg outline-none focus:ring-2 focus:ring-[#C62127]"
                 placeholder="Your message..."
               />
             </div>
 
             <button
               type="submit"
-              className="w-full py-3 bg-blue-600 hover:bg-blue-700 rounded-lg font-semibold transition"
+              className="w-full py-3 bg-[#C62127] hover:bg-[#A51B1E] rounded-lg font-semibold transition"
             >
               Send Message
             </button>

@@ -15,13 +15,13 @@ export default function Projects() {
       title: "Drone Mapping for Construction",
       description: "High-precision aerial survey and mapping for a major construction site.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/drone-surveying-land-surveyor-gnss-drone_prundy.png",
     },
     {
       title: "Boundary Survey – Residential Estate",
       description: "Full boundary demarcation and property verification.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/survey-mapping-1_v50rb5.jpg",
     },
     {
       title: "Topographic Survey – Land Development",
@@ -33,7 +33,7 @@ export default function Projects() {
       title: "GIS Mapping Project",
       description: "Geospatial analysis and map visualization for urban planning.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/industry_GIS_1_psla9i.jpg",
     },
   ];
 
@@ -96,7 +96,7 @@ export default function Projects() {
                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-300">{project.description}</p>
 
-                <button className="mt-4 bg-blue-600 px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition">
+                <button className="mt-4 bg-[#C62127] px-5 py-2 rounded-full font-medium hover:bg-[#A51B1E] transition">
                   View Details
                 </button>
               </div>

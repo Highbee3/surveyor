@@ -89,7 +89,7 @@ export default function Equipment() {
         <div className="mt-8 flex justify-center gap-4">
           <a
             href="/survey-plan.pdf"
-            className="inline-flex items-center gap-2 bg-blue-600 px-5 py-3 rounded-full font-semibold shadow-lg hover:brightness-105 transition"
+            className="inline-flex items-center gap-2 bg-[#C62127] px-5 py-3 rounded-full font-semibold shadow-lg hover:brightness-105 transition"
           >
             <FaDownload /> Download Plan (PDF)
           </a>
@@ -214,7 +214,7 @@ export default function Equipment() {
           </div>
           <a
             href="/survey-plan.pdf"
-            className="ml-6 inline-block bg-blue-600 px-4 py-2 rounded-full font-medium hover:brightness-105 transition"
+            className="ml-6 inline-block bg-[#C62127] px-4 py-2 rounded-full font-medium hover:brightness-105 transition"
           >
             Download
           </a>

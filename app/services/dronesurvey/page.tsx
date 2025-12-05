@@ -1,6 +1,7 @@
  "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { 
   FaSatelliteDish, 
   FaMapMarkedAlt, 
@@ -14,8 +15,16 @@ export default function DroneSurvey() {
       {/* HERO SECTION */}
       <section className="h-[70vh] bg-[url('/drone-bg.jpg')] bg-cover bg-center relative">
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/60"></div>
+        <div className="absolute inset-0 bg-black/60">
+         <Image
+          src="https://res.cloudinary.com/dlzjjxtsd/image/upload/drone-surveying-land-surveyor-gnss-drone_prundy.png"
+          alt="Drone Surveying"
+          fill
+          className="object-cover opacity-60"
+        />
 
+        </div>
+       
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-6">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -83,12 +92,12 @@ export default function DroneSurvey() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="py-20 bg-blue-600 text-center">
+      <section className="py-20 bg-[#4A7E51] text-center">
         <h2 className="text-4xl font-bold mb-4">Ready to Start a Project?</h2>
         <p className="text-lg mb-6">Contact us for professional and reliable drone surveying services.</p>
         <a
           href="/contact"
-          className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-200"
+          className="bg-white text-[#C62127] px-8 py-3 rounded-full font-semibold hover:bg-gray-200"
         >
           Contact Us
         </a>

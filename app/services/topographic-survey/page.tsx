@@ -109,14 +109,14 @@ export default function Topographic() {
       {/* CTA SECTION */}
       <section
         data-aos="fade-up"
-        className="py-20 bg-blue-600 text-center"
+        className="py-20 bg-[#4A7E51] text-center"
       >
         <h2 className="text-4xl font-bold mb-4">Need a Topographic Survey?</h2>
         <p className="text-lg mb-6">Our team delivers precise, engineering-grade mapping.</p>
 
         <a
           href="/contact"
-          className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+          className="bg-white text-[#C62127] px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
         >
           Contact Us
         </a>
