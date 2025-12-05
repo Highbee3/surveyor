@@ -15,25 +15,25 @@ export default function Projects() {
       title: "Drone Mapping for Construction",
       description: "High-precision aerial survey and mapping for a major construction site.",
       image:
-        "https://images.unsplash.com/photo-1508614999368-9260051291ea?auto=format&fit=crop&w=900&q=60",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
     },
     {
       title: "Boundary Survey – Residential Estate",
       description: "Full boundary demarcation and property verification.",
       image:
-        "https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=900&q=60",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
     },
     {
       title: "Topographic Survey – Land Development",
       description: "Contour mapping and terrain modeling for land use planning.",
       image:
-        "https://images.unsplash.com/photo-1529070538774-7da3cb3265df?auto=format&fit=crop&w=900&q=70",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
     },
     {
       title: "GIS Mapping Project",
       description: "Geospatial analysis and map visualization for urban planning.",
       image:
-        "https://images.unsplash.com/photo-1514474959185-14543834d41d?auto=format&fit=crop&w=900&q=60",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
     },
   ];
 
@@ -44,7 +44,7 @@ export default function Projects() {
         className="h-[50vh] relative bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1600&q=80')",
+            "url('https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>

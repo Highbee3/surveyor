@@ -83,12 +83,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <li>
-            <Link
-              href="/quote"
-              className="bg-yellow-400 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-300 transition"
-            >
-              Request a Quote
-            </Link>
+         
           </li>
         </ul>
 
@@ -122,10 +117,10 @@ export default function Navbar() {
           className="ml-4 mt-2 space-y-2 bg-blue-700 p-3 rounded 
           animate-dropdown"
         >
-          <li><Link href="/services/land-survey">Land Survey</Link></li>
-          <li><Link href="/services/drone-survey">Drone Survey</Link></li>
+          <li><Link href="/services/LandSurvey">Land Survey</Link></li>
+          <li><Link href="/services/dronesurvey">Drone Survey</Link></li>
           <li><Link href="/services/topographic-survey">Topographic Survey</Link></li>
-          <li><Link href="/services/boundary-mapping">Boundary Mapping</Link></li>
+          <li><Link href="/services/boundary">Boundary Mapping</Link></li>
         </ul>
       )}
     </li>
@@ -136,12 +131,7 @@ export default function Navbar() {
 
     {/* CTA */}
     <li>
-      <Link
-        href="/quote"
-        className="block bg-yellow-400 text-black text-center py-2 rounded-lg font-semibold hover:bg-yellow-300"
-      >
-        Request a Quote
-      </Link>
+    
     </li>
   </ul>
 )}
