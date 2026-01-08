@@ -59,7 +59,7 @@ export default function Footer() {
           <ul className="space-y-2 text-gray-300">
             <li className="flex items-center gap-2"> <MdLocationPin className="text-yellow-400"/> Lagos, Nigeria</li>
             <li className="flex items-center gap-2"><FaPhone className="text-yellow-400"/> +234 810 000 0000</li>
-            <li className="flex items-center gap-2"><IoIosMail className="text-yellow-400"/> info@highbeesurveying.com</li>
+            <li className="flex items-center gap-2"><IoIosMail className="text-yellow-400"/> koassgeomaticsconsultsltd@gmail.com</li>
           </ul>
 
           {/* Social Icons */}
@@ -73,8 +73,8 @@ export default function Footer() {
       </div>
 
       {/* Bottom copyright */}
-      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400 text-sm">
-        © {new Date().getFullYear()} Highbee Surveying. All rights reserved.
+      <div className="border-t border-gray-700 mt-10 pt-6 text-center text-white text-sm">
+        © {new Date().getFullYear()} Koass Geomatics Consults Limited . All rights reserved.
       </div>
     </footer>
   );

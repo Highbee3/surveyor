@@ -14,14 +14,19 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center h-20 px-4 md:px-8">
         {/* Logo */}
           <Link href="/">
-        <div className="h-16 w-auto flex items-center">
+        <div className="h-16 w-80 flex ">
           <Image
             src="https://res.cloudinary.com/dlzjjxtsd/image/upload/Screenshot_26_uz8qyw.png"
             alt="SurveyPro Logo"
-            width={200}
-            height={200}
-            className="h-full w-auto object-contain"
+            width={400}
+            height={400}
+            className="h-full w-auto"
           />
+
+          {/* <span className=" w-full text-center">
+                <h4>KOASS</h4>
+                <p className=" text-sm w-full">Geomatics Consults Limited</p>
+          </span> */}
         </div>
             </Link>
 
@@ -57,6 +62,15 @@ export default function Navbar() {
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
                   <Link href="/services/boundary">Boundary Mapping</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-200 rounded">
+                  <Link href="/services/hydrographics">Hydrographic Surveying</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-200 rounded">
+                  <Link href="/services/Engineering">Engineering Surveying</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-200 rounded">
+                  <Link href="/services/geospatial">Geospatial Solutions</Link>
                 </li>
               </ul>
             )}
@@ -121,6 +135,15 @@ export default function Navbar() {
                 </li>
                 <li>
                   <Link href="/services/boundary">Boundary Mapping</Link>
+                </li>
+                <li>
+                  <Link href="/services/hydrographics">Hydrographic Surveying</Link>
+                </li>
+                <li>
+                  <Link href="/services/engineering">Engineering Surveying</Link>
+                </li>
+                <li>
+                  <Link href="/services/geospatial">Geospatial Solutions</Link>
                 </li>
               </ul>
             )}

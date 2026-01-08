@@ -6,86 +6,112 @@ import Link from "next/link";
 
 export default function LandSurvey() {
   return (
-    <div className="w-full">
+    <div className="w-full mt-21">
       {/* HERO */}
-      <section className="relative h-[60vh] bg-gray-900">
+      <section className="relative h-[65vh] bg-gray-900">
         <Image
-          src="https://res.cloudinary.com/dlzjjxtsd/image/upload/land-surveying-for-dummies_lo82xi.jpg"
-          alt="Land Surveying"
+          src="https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20241008-WA0013_udgto8.jpg"
+          alt="Professional Land Surveying"
           fill
+          priority
           className="object-cover opacity-60"
         />
-        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="absolute inset-0 bg-linear-to-r from-black/70 to-black/30"></div>
 
-        <div className="relative z-10 flex h-full flex-col justify-center px-6 md:px-20 text-white">
+        <div className="relative z-10 flex h-full flex-col justify-center px-6 md:px-24 text-white max-w-4xl">
           <motion.h1
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="text-4xl md:text-5xl font-bold"
+            transition={{ duration: 0.8 }}
+            className="text-4xl md:text-6xl font-bold leading-tight"
           >
-            Land Surveying Services
+            Professional Land Surveying Services
           </motion.h1>
 
           <motion.p
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="mt-4 text-lg md:text-xl max-w-xl"
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="mt-6 text-lg md:text-xl text-gray-200"
           >
-            Accurate boundary mapping, property demarcation, and legal surveys
-            using modern GNSS and Total Station technology.
+            Accurate boundary definition, cadastral mapping, and legal land
+            surveys delivered with modern GNSS, Total Stations, and UAV
+            technology.
           </motion.p>
+
+          <Link
+            href="/quote"
+            className="mt-8 inline-block w-fit bg-[#C62127] px-8 py-4 rounded-lg font-semibold hover:bg-[#A51B1E] transition"
+          >
+            Get a Survey Quote
+          </Link>
         </div>
       </section>
 
-      {/* INTRO SECTION */}
-      <section className="py-16 px-6 md:px-20">
-        <h2 className="text-3xl font-bold mb-6">What Is Land Surveying?</h2>
+      {/* INTRO */}
+      <section className="py-20 px-6 md:px-24">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          What Is Land Surveying?
+        </h2>
 
-        <p className="text-gray-700 leading-relaxed max-w-3xl">
-          Land surveying is the process of determining the precise boundaries,
-          coordinates, and features of a piece of land. Land surveys are
-          essential for property ownership, development, construction, and legal
-          documentation. Our team uses modern surveying equipment and
-          professional expertise to deliver accurate and reliable measurements.
+        <p className="text-gray-700 leading-relaxed max-w-4xl">
+          Land surveying is the scientific process of measuring, mapping, and
+          defining land boundaries and physical features. It forms the legal and
+          technical foundation for property ownership, construction, land
+          development, and dispute resolution. Our surveys comply with statutory
+          regulations and industry best practices.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-10 mt-12">
-          <div>
+        <div className="grid md:grid-cols-2 gap-12 mt-14 items-center">
+          <div className="relative h-130">
             <Image
-              src="https://res.cloudinary.com/dlzjjxtsd/image/upload/1st_Horizon_D1-9444-1024x683_s0ftz4.jpg"
-              alt="Survey Team"
-              width={600}
-              height={400}
-              className="rounded-xl shadow-lg object-cover"
+              src="https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20210219-WA0002_pglnmy.jpg"
+              alt="Survey team at work"
+              fill
+              className="rounded-2xl object-cover shadow-lg"
             />
           </div>
 
-          <div className="flex flex-col justify-center">
+          <div>
             <h3 className="text-2xl font-semibold mb-4">
-              Professional & Accurate Measurements
+              High Accuracy. Legal Compliance. Reliable Results.
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              We provide high-accuracy land surveys using GNSS receivers, Total
-              Stations, and digital leveling equipment. Whether it&apos;s for land
-              purchase, development planning, boundary disputes, or legal
-              documentation, we ensure your data is precise and dependable.
+              We deliver precise land measurements for property acquisition,
+              estate development, boundary verification, and statutory
+              documentation. Every project is handled by experienced surveyors
+              using calibrated instruments and verified control points.
             </p>
-
-            <Link
-              href="/quote"
-              className="mt-6 inline-block bg-[#C62127] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#A51B1E] transition"
-            >
-              Request a Land Survey
-            </Link>
           </div>
         </div>
       </section>
 
-      {/* TYPES OF LAND SURVEYS */}
-      <section className="py-20 px-6 md:px-20 bg-gray-100">
-        <h2 className="text-3xl font-bold text-center mb-12">
+      {/* WHY CHOOSE US */}
+      <section className="py-20 px-6 md:px-24 bg-gray-50">
+        <h2 className="text-3xl md:text-4xl font-bold text-black text-center mb-14">
+          Why Choose Our Surveying Services
+        </h2>
+
+        <div className="grid md:grid-cols-4 gap-8 text-gray-500">
+          {[
+            "Licensed & Experienced Surveyors",
+            "Modern Surveying Technology",
+            "Fast Turnaround Time",
+            "Legally Defensible Survey Reports",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="bg-white p-6 rounded-xl shadow-md text-center"
+            >
+              <p className="font-semibold text-lg">{item}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* TYPES */}
+      <section className="py-20 px-6 md:px-24">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-14">
           Types of Land Surveys We Offer
         </h2>
 
@@ -93,89 +119,70 @@ export default function LandSurvey() {
           {[
             {
               title: "Boundary Survey",
-              desc: "Precise determination of property boundaries for ownership and documentation.",
+              desc: "Accurate demarcation of property limits for ownership verification.",
             },
             {
               title: "Cadastral Survey",
-              desc: "Government-recognized land demarcation for legal registration.",
-            },
-            {
-              title: "Site Plan Survey",
-              desc: "Required drawings and measurements for building approval.",
-            },
-            {
-              title: "Subdivision Survey",
-              desc: "Dividing land into plots for estate development or resale.",
+              desc: "Government-approved land surveys for title registration.",
             },
             {
               title: "Topographic Survey",
-              desc: "Detailed mapping of terrain, features, and elevation.",
+              desc: "Detailed mapping of terrain, elevations, and surface features.",
             },
             {
-              title: "Construction Layout",
-              desc: "Setting out buildings, drainage, roads, and engineering features.",
+              title: "Subdivision Survey",
+              desc: "Plot layout for estate development and land sales.",
+            },
+            {
+              title: "Site Plan Survey",
+              desc: "Planning drawings required for building approval.",
+            },
+            {
+              title: "Construction Set-Out",
+              desc: "Precise layout of buildings, roads, and infrastructure.",
             },
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-white p-6 shadow-lg rounded-xl hover:-translate-y-2 transition"
+              className="bg-white p-6 rounded-xl shadow-lg hover:-translate-y-1 transition"
             >
-              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
               <p className="text-gray-600">{item.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* EQUIPMENT SECTION */}
-      <section className="py-20 px-6 md:px-20">
-        <h2 className="text-3xl font-bold mb-6">Modern Equipment We Use</h2>
-
-        <p className="text-gray-700 leading-relaxed max-w-3xl mb-10">
-          To guarantee high-precision results, we use certified equipment trusted
-          by surveyors worldwide.
-        </p>
-
-        <div className="grid md:grid-cols-3 gap-10">
-          <div className="p-6 border rounded-xl shadow-sm">
-            <h3 className="font-semibold text-lg mb-2">GNSS Receivers</h3>
-            <p className="text-gray-600">
-              High-accuracy GPS units for control points and fast positioning.
-            </p>
-          </div>
-
-          <div className="p-6 border rounded-xl shadow-sm">
-            <h3 className="font-semibold text-lg mb-2">Total Stations</h3>
-            <p className="text-gray-600">
-              Precision angle and distance measurement for all survey types.
-            </p>
-          </div>
-
-          <div className="p-6 border rounded-xl shadow-sm">
-            <h3 className="font-semibold text-lg mb-2">Drones (UAV)</h3>
-            <p className="text-gray-600">
-              Aerial mapping tools for orthomosaic images and topographic models.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA SECTION */}
-      <section className="py-20 px-6 md:px-20 bg-[#4A7E51] text-white text-center">
-        <h2 className="text-3xl md:text-4xl font-bold">
-          Need a Land Survey for Your Property?
+      {/* PROCESS */}
+      <section className="py-20 px-6 md:px-24 bg-gray-100">
+        <h2 className="text-3xl text-black md:text-4xl font-bold mb-12">
+          Our Survey Process
         </h2>
 
-        <p className="mt-4 max-w-2xl mx-auto text-lg">
-          Contact us today to get accurate and reliable land survey data for your
-          project, property purchase, or development approval.
+        <ol className="grid md:grid-cols-4 gap-8 list-decimal list-inside text-gray-400">
+          <li>Project consultation & data review</li>
+          <li>Field data acquisition</li>
+          <li>Data processing & analysis</li>
+          <li>Delivery of survey plans & reports</li>
+        </ol>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24 px-6 md:px-24 bg-[#4A7E51] text-white text-center">
+        <h2 className="text-3xl md:text-5xl font-bold">
+          Ready to Start Your Land Survey?
+        </h2>
+
+        <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-100">
+          Get accurate, legally compliant land survey data delivered by
+          professionals you can trust.
         </p>
 
         <Link
           href="/contact"
-          className="mt-8 inline-block bg-[#C62127] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#A51B1E] transition"
+          className="mt-10 inline-block bg-[#C62127] px-10 py-4 rounded-lg font-semibold hover:bg-[#A51B1E] transition"
         >
-          Contact Us Now
+          Contact Our Survey Team
         </Link>
       </section>
     </div>

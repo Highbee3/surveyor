@@ -42,7 +42,7 @@ export default function Contact() {
               <FaEnvelope className="text-red-400 text-xl mt-1" />
               <div>
                 <p className="font-medium">Email</p>
-                <p className="text-gray-300">Ibrahimademola145@gmail.com</p>
+                <p className="text-gray-300">koassgeomaticsconsultsltd@gmail.com</p>
               </div>
             </div>
 
@@ -50,7 +50,7 @@ export default function Contact() {
               <FaMapMarkerAlt className="text-green-400 text-xl mt-1" />
               <div>
                 <p className="font-medium">Location</p>
-                <p className="text-gray-300">Lagos, Nigeria</p>
+                <p className="text-gray-300">13, Ogunbona Street, Abule-Oloni, Lantoro, Abeokuta, Ogun State.</p>
               </div>
             </div>
           </div>

@@ -11,7 +11,7 @@ export default function Home() {
       <section
         className="
         h-[90vh] 
-        bg-[url('https://res.cloudinary.com/dlzjjxtsd/image/upload/The-Most-Important-Construction-Safety-Tips_du9tfd.jpg')]
+        bg-[url('https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20250713-WA0079_djm1bv.jpg')]
         bg-cover bg-center 
         relative
       "
@@ -25,7 +25,7 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-6xl font-bold leading-tight"
           >
-            Precision Surveying & <br /> Geospatial Engineering
+            Koass Geomatics <br />Consults Limited
           </motion.h1>
 
           <motion.p
@@ -129,7 +129,7 @@ export default function Home() {
 
           <div className="rounded-xl overflow-hidden shadow-lg relative w-full h-[350px]">
             <Image
-              src="https://res.cloudinary.com/dlzjjxtsd/image/upload/download-68_pxxunp.jpg"
+              src="https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_5980_z7jhpc.jpg"
               alt="Surveyor"
               fill
               className="object-cover"
@@ -139,38 +139,47 @@ export default function Home() {
       </section>
 
       {/* PORTFOLIO PREVIEW */}
-      <section className="py-20 px-6 md:px-16 bg-gray-50">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          Recent Projects
-        </h2>
+<section className="py-20 px-6 md:px-16 bg-gray-50">
+  <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+    Recent Projects
+  </h2>
 
-        <div className="grid md:grid-cols-3 gap-10">
-          {[
-            "Road Construction Set-Out",
-            "Drone Mapping for Estate Development",
-            "Topographic Survey for Site Planning",
-          ].map((title, i) => (
-            <div
-              key={i}
-              className="bg-white shadow-lg rounded-xl overflow-hidden"
-            >
-              <div className="relative h-48">
-                <Image
-                  src="https://res.cloudinary.com/dlzjjxtsd/image/upload/land-surveying-for-dummies_lo82xi.jpg"
-                  alt="Project Image"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="font-semibold text-lg">{title}</h3>
-                <p className="text-gray-600 text-sm mt-2">
-                  High-precision fieldwork done with modern surveying
-                  technologies.
-                </p>
-              </div>
-            </div>
-          ))}
+  <div className="grid md:grid-cols-3 gap-10">
+    {[
+      {
+        title: "Road Construction Set-Out",
+        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20250713-WA0088_dgdhhy.jpg",
+      },
+      {
+        title: "Drone Mapping for Estate Development",
+        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_5980_z7jhpc.jpg",
+      },
+      {
+        title: "Topographic Survey for Site Planning",
+        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20260107-WA0022_fkgdie.jpg",
+      },
+    ].map((project, i) => (
+      <div
+        key={i}
+        className="bg-white shadow-lg rounded-xl overflow-hidden"
+      >
+        <div className="relative h-80">
+          <Image
+            src={project.image}
+            alt={project.title}
+           fill
+            className=" bg-gray-200"
+          />
+        </div>
+
+        <div className="p-4">
+          <h3 className="font-semibold text-lg">{project.title}</h3>
+          <p className="text-gray-600 text-sm mt-2">
+            High-precision fieldwork done with modern surveying technologies.
+          </p>
+        </div>
+      </div>
+    ))}
         </div>
 
         <div className="text-center mt-10">
