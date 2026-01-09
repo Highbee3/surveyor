@@ -59,13 +59,13 @@ export default function HydrographicSurveying() {
   ];
 
   return (
-    <div className="w-full bg-gray-100">
+    <div className="w-full bg-gray-100 mt-10">
       {/* HERO HEADER */}
       <section
         className="relative py-32 px-6 md:px-24 bg-cover bg-center text-center text-white"
         style={{
           backgroundImage:
-            "url('https://upload.wikimedia.org/wikipedia/commons/d/db/Fis01334_%2827555144884%29.jpg')",
+            "url('https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_7078_dvyd1u.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-blue-900/70"></div>

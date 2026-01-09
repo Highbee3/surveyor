@@ -21,7 +21,7 @@ export default function Projects() {
       title: "Boundary Survey – Residential Estate",
       description: "Full boundary demarcation and property verification.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/survey-mapping-1_v50rb5.jpg",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_7068_l8iged.jpg",
     },
     {
       title: "Topographic Survey – Land Development",

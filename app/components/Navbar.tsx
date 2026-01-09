@@ -10,28 +10,31 @@ export default function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#4A7E51] text-white shadow-md fixed top-0 z-50">
+    <nav className="w-full bg-[#4A7E51] text-white shadow-md fixed top-0 z-50 p-1">
       <div className="container mx-auto flex justify-between items-center h-20 px-4 md:px-8">
-        {/* Logo */}
-          <Link href="/">
-        <div className="h-16 w-80 flex ">
+        <Link href="/" className="flex items-center gap-3">
           <Image
-            src="https://res.cloudinary.com/dlzjjxtsd/image/upload/Screenshot_26_uz8qyw.png"
-            alt="SurveyPro Logo"
-            width={400}
-            height={400}
-            className="h-full w-auto"
+            src="https://res.cloudinary.com/dlzjjxtsd/image/upload/KOASS_n3_vukp6s.png"
+            alt="KOASS Geomatics"
+            width={150}
+            height={150}
+            className="rounded-full border-2"
+            priority
           />
 
-          {/* <span className=" w-full text-center">
-                <h4>KOASS</h4>
-                <p className=" text-sm w-full">Geomatics Consults Limited</p>
-          </span> */}
-        </div>
-            </Link>
+         
+          <div className="hidden sm:block">
+            <div className="text-lg sm:text-xl font-bold tracking-tight">
+              KOASS
+            </div>
+            <div className="text-[11px] sm:text-xs text-green-100/80 font-medium">
+              Geomatics Consults Limited
+            </div>
+          </div>
+        </Link>
 
-        {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-lg font-medium items-center">
+       
+        <ul className="hidden md:flex space-x-8 text-x font-medium items-center">
           <li className="group relative">
             <Link href="/" className="relative">
               Home
@@ -58,16 +61,22 @@ export default function Navbar() {
                   <Link href="/services/dronesurvey">Drone Survey</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/topographic-survey">Topographic Survey</Link>
+                  <Link href="/services/topographic-survey">
+                    Topographic Survey
+                  </Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
                   <Link href="/services/boundary">Boundary Mapping</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/hydrographics">Hydrographic Surveying</Link>
+                  <Link href="/services/hydrographics">
+                    Hydrographic Surveying
+                  </Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/Engineering">Engineering Surveying</Link>
+                  <Link href="/services/Engineering">
+                    Engineering Surveying
+                  </Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
                   <Link href="/services/geospatial">Geospatial Solutions</Link>
@@ -131,16 +140,22 @@ export default function Navbar() {
                   <Link href="/services/dronesurvey">Drone Survey</Link>
                 </li>
                 <li>
-                  <Link href="/services/topographic-survey">Topographic Survey</Link>
+                  <Link href="/services/topographic-survey">
+                    Topographic Survey
+                  </Link>
                 </li>
                 <li>
                   <Link href="/services/boundary">Boundary Mapping</Link>
                 </li>
                 <li>
-                  <Link href="/services/hydrographics">Hydrographic Surveying</Link>
+                  <Link href="/services/hydrographics">
+                    Hydrographic Surveying
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/services/engineering">Engineering Surveying</Link>
+                  <Link href="/services/engineering">
+                    Engineering Surveying
+                  </Link>
                 </li>
                 <li>
                   <Link href="/services/geospatial">Geospatial Solutions</Link>

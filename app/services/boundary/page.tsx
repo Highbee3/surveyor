@@ -19,7 +19,7 @@ export default function Boundary() {
         className="h-[70vh] bg-cover bg-center relative"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/dlzjjxtsd/image/upload/survey-mapping-1_v50rb5.jpg')",
+            "url('https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_7068_l8iged.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>

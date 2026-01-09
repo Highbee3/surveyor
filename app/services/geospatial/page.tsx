@@ -56,7 +56,7 @@ export default function Geospatial() {
       {/* HERO */}
       <section className="relative h-[90vh] min-h-[600px] px-6 md:px-24 flex items-center text-white overflow-hidden">
         <Image
-          src={`${CLOUD}/geospatial/drone-hero.jpg`}
+          src="https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_0186_rulqk2.jpg"
           alt="Professional drone aerial mapping for geospatial services"
           fill
           priority
@@ -120,7 +120,7 @@ export default function Geospatial() {
           <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-gray-900">
             Industries We Serve
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols md:grid-cols-4 gap-8">
             {[
               "Civil & Structural Engineering",
               "Construction & Infrastructure",
