@@ -13,40 +13,40 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Drone Mapping for Construction",
+      title: "Route Surveying",
       description:
-        "High-precision aerial survey and mapping for a major construction site.",
+        "Precision alignment for roads, railways, pipelines, and infrastructure - charting the optimal path with accuracy and efficiency.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/drone-surveying-land-surveyor-gnss-drone_prundy.png",
-        slug: "/services/geospatial",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20251217-WA0016_rmkgc2.jpg",
+      slug: "/services/geospatial",
     },
     {
-      title: "Boundary Survey – Residential Estate",
-      description: "Full boundary demarcation and property verification.",
+      title: "Subdivision (Layout) Survey",
+      description: "Expert division of land into parcels - creating clear, legally compliant layouts for residential, commercial, and development projects.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_7068_l8iged.jpg",
-        slug: "/services/boundary",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20210219-WA0002_pglnmy.jpg",
+      slug: "/services/boundary",
     },
     {
-      title: "Topographic Survey – Land Development",
+      title: "Engineering Survey",
       description:
-        "Contour mapping and terrain modeling for land use planning.",
+        "Detailed topographic and layout data - supporting engineers in design, construction staking, and as-built verification for successful projects.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
-        slug: "/services/topographic-survey",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20241008-WA0013_udgto8.jpg",
+      slug: "/services/topographic-survey",
     },
     {
-      title: "GIS Mapping Project",
+      title: "Geospatial Solutions",
       description:
-        "Geospatial analysis and map visualization for urban planning.",
+        "Advanced GIS, drone mapping, and data integration - transforming spatial information into actionable insights for planning and decision-making.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/industry_GIS_1_psla9i.jpg",
-        slug: "/services/geospatial",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_0186_rulqk2.jpg",
+      slug: "/services/geospatial",
     },
   ];
 
   return (
-    <div className="text-white">
+    <div className="text-white mt-15">
       {/* HERO SECTION */}
       <section
         className="h-[50vh] relative bg-cover bg-center"
@@ -96,7 +96,7 @@ export default function Projects() {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="h-56 w-full object-cover"
+                className="h-85 w-full object-cover"
                 width={400}
                 height={224}
               />

@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
+
+
 export default function Home() {
   return (
     <div className="w-full">
@@ -66,28 +68,28 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-10">
           {[
             {
-              title: "Land Surveying",
-              desc: "Boundary, subdivision, property demarcation and development planning.",
+              title: "Route Surveying",
+              desc: "Precision alignment for roads, railways, pipelines, and infrastructure - charting the optimal path with accuracy and efficiency.",
             },
             {
-              title: "Drone Mapping (Aerial Survey)",
-              desc: "High resolution drone images, 3D mapping, photogrammetry & orthomosaics.",
+              title: "Subdivision (Layout) Survey",
+              desc: "Expert division of land into parcels - creating clear, legally compliant layouts for residential, commercial, and development projects.",
             },
             {
-              title: "Topographic Survey",
-              desc: "Detailed terrain data for engineering design and architectural planning.",
+              title: "Hydrographic Surveying",
+              desc: "Mapping underwater terrain and depths - delivering essential data for navigation, dredging, coastal engineering, and marine projects.",
             },
             {
-              title: "Geodetic Survey",
-              desc: "Precise coordinate measurement using GNSS, control points and leveling.",
+              title: "Monumentation / Boundary Demarcation",
+              desc: "Defining and marking precise property boundaries - protecting rights, resolving disputes, and ensuring secure land ownership.",
             },
             {
-              title: "Engineering Survey",
-              desc: "Setting out buildings, roads, bridges, drainage and construction layouts.",
+              title: "Control Survey",
+              desc: "Establishing reliable reference points - the foundation for accurate mapping, construction, and future surveys across any site.",
             },
             {
-              title: "GIS & Mapping",
-              desc: "Spatial analysis, mapping solutions, data collection and digitization.",
+              title: "Geospatial Solutions",
+              desc: "Advanced GIS, drone mapping, and data integration - transforming spatial information into actionable insights for planning and decision-making.",
             },
           ].map((item, i) => (
             <div
@@ -147,16 +149,20 @@ export default function Home() {
   <div className="grid md:grid-cols-3 gap-10">
     {[
       {
-        title: "Road Construction Set-Out",
-        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20250713-WA0088_dgdhhy.jpg",
+        title: "Route Surveying",
+        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20251217-WA0016_rmkgc2.jpg",
+        description:"Precision alignment for roads, railways, pipelines, and infrastructure - charting the optimal path with accuracy and efficiency."
+        
       },
       {
-        title: "Drone Mapping for Estate Development",
-        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_5980_z7jhpc.jpg",
+        title: "Subdivision (Layout) Survey",
+        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20210219-WA0002_pglnmy.jpg",
+        description:"Expert division of land into parcels - creating clear, legally compliant layouts for residential, commercial, and development projects."
       },
       {
         title: "Topographic Survey for Site Planning",
         image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20260107-WA0022_fkgdie.jpg",
+        description:"Comprehensive topographic survey capturing land contours, elevations, and features to inform site development plans."
       },
     ].map((project, i) => (
       <div
@@ -175,7 +181,7 @@ export default function Home() {
         <div className="p-4">
           <h3 className="font-semibold text-lg">{project.title}</h3>
           <p className="text-gray-600 text-sm mt-2">
-            High-precision fieldwork done with modern surveying technologies.
+           {project.description}
           </p>
         </div>
       </div>
