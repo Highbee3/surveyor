@@ -69,7 +69,9 @@ export default function Geospatial() {
             Geospatial & Surveying Services
           </h1>
           <p className="text-xl md:text-3xl mb-10 max-w-3xl">
-            Precise positioning, mapping, and spatial intelligence solutions for infrastructure, engineering, and environmental projects.
+            Advanced GIS, drone mapping, and data integration - transforming
+            spatial information into actionable insights for planning and
+            decision-making.
           </p>
           <Link
             href="/contact"
@@ -101,9 +103,7 @@ export default function Geospatial() {
                 </div>
                 <div className="p-10">
                   <Icon className="w-14 h-14 text-[#4A7E51] mb-6" />
-                  <h3 className="text-2xl font-bold mb-4">
-                    {service.title}
-                  </h3>
+                  <h3 className="text-2xl font-bold mb-4">{service.title}</h3>
                   <p className="text-gray-600">{service.desc}</p>
                 </div>
               </div>
@@ -111,8 +111,6 @@ export default function Geospatial() {
           })}
         </div>
       </section>
-   
-
 
       {/* INDUSTRIES */}
       <section className="py-24 px-6 md:px-24 bg-white">
@@ -160,7 +158,9 @@ export default function Geospatial() {
                 <span className="shrink-0 w-12 h-12 bg-[#4A7E51] text-white rounded-full flex items-center justify-center text-xl font-bold mr-8">
                   {i + 1}
                 </span>
-                <p className="text-xl text-gray-700 pt-1 leading-relaxed">{step}</p>
+                <p className="text-xl text-gray-700 pt-1 leading-relaxed">
+                  {step}
+                </p>
               </li>
             ))}
           </ol>
@@ -173,7 +173,8 @@ export default function Geospatial() {
           Ready for Precision Spatial Data?
         </h2>
         <p className="max-w-4xl mx-auto text-2xl mb-12 leading-relaxed">
-          Partner with our expert geospatial team for accurate surveys, advanced mapping, and actionable insights that drive project success.
+          Partner with our expert geospatial team for accurate surveys, advanced
+          mapping, and actionable insights that drive project success.
         </p>
         <Link
           href="/contact"

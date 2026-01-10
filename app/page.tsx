@@ -163,7 +163,7 @@ export default function Home() {
         key={i}
         className="bg-white shadow-lg rounded-xl overflow-hidden"
       >
-        <div className="relative h-80">
+        <div className="relative h-100">
           <Image
             src={project.image}
             alt={project.title}

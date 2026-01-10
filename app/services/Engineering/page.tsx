@@ -1,14 +1,14 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  BuildingOfficeIcon, 
-  WrenchScrewdriverIcon, 
-  ClipboardDocumentCheckIcon, 
-  MapIcon, 
-  CalculatorIcon, 
-  DocumentTextIcon 
-} from "@heroicons/react/24/outline"; 
+import {
+  BuildingOfficeIcon,
+  WrenchScrewdriverIcon,
+  ClipboardDocumentCheckIcon,
+  MapIcon,
+  CalculatorIcon,
+  DocumentTextIcon,
+} from "@heroicons/react/24/outline";
 
 export default function Engineering() {
   const services = [
@@ -47,15 +47,23 @@ export default function Engineering() {
   return (
     <div className="w-full bg-gray-100">
       {/* HERO HEADER WITH BACKGROUND IMAGE */}
-      <section className="relative py-32 px-6 md:px-24 bg-cover bg-center bg-no-repeat text-center text-white"
-        style={{ backgroundImage: "url('https://damassets.autodesk.net/content/dam/autodesk/draftr/23696/civil-engineering-and-civil-site-design-1172x660.jpg')" }}>
-        <div className="absolute inset-0 bg-black/50"></div> {/* Dark overlay */}
+      <section
+        className="relative py-32 px-6 md:px-24 bg-cover bg-center bg-no-repeat text-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://damassets.autodesk.net/content/dam/autodesk/draftr/23696/civil-engineering-and-civil-site-design-1172x660.jpg')",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/50"></div>{" "}
+        {/* Dark overlay */}
         <div className="relative z-10 max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Engineering & Infrastructure Services
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Professional engineering solutions for infrastructure development, construction projects, and technical planning.
+            Detailed topographic and layout data - supporting engineers in
+            design, construction staking, and as-built verification for
+            successful projects.
           </p>
         </div>
       </section>
@@ -67,7 +75,11 @@ export default function Engineering() {
             Engineering Solutions You Can Trust
           </h2>
           <p className="text-lg text-gray-500 leading-relaxed">
-            Our engineering services provide practical, efficient, and compliant solutions for civil infrastructure and construction projects. We work closely with developers, contractors, and government agencies to deliver designs and technical support that meet industry standards and project requirements.
+            Our engineering services provide practical, efficient, and compliant
+            solutions for civil infrastructure and construction projects. We
+            work closely with developers, contractors, and government agencies
+            to deliver designs and technical support that meet industry
+            standards and project requirements.
           </p>
         </div>
       </section>
@@ -104,8 +116,12 @@ export default function Engineering() {
                 </div>
                 <div className="p-8">
                   <ServiceIcon className="w-12 h-12 text-[#4A7E51] mb-4" />
-                  <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{service.desc}</p>
+                  <h3 className="text-2xl font-semibold mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.desc}
+                  </p>
                 </div>
               </div>
             );
@@ -170,7 +186,8 @@ export default function Engineering() {
           Ready to Build with Confidence?
         </h2>
         <p className="mt-6 max-w-3xl mx-auto text-xl text-gray-100">
-          Contact our experienced engineering team today for reliable designs, precise calculations, and expert project execution.
+          Contact our experienced engineering team today for reliable designs,
+          precise calculations, and expert project execution.
         </p>
         <Link
           href="/contact"

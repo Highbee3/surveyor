@@ -74,8 +74,8 @@ export default function HydrographicSurveying() {
             Hydrographic Surveying Services
           </h1>
           <p className="text-xl md:text-2xl max-w-4xl mx-auto">
-            Accurate bathymetric surveys and marine data collection for navigation,
-            dredging, coastal engineering, and offshore projects.
+            Mapping underwater terrain and depths - delivering essential data
+            for navigation, dredging, coastal engineering, and marine projects.
           </p>
         </div>
       </section>
@@ -87,9 +87,10 @@ export default function HydrographicSurveying() {
             Precision Mapping of Underwater Environments
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed max-w-4xl mx-auto">
-            Hydrographic surveying measures and maps water bodies to determine depths,
-            seabed features, and underwater obstacles—essential for safe navigation,
-            marine construction, dredging, and environmental protection.
+            Hydrographic surveying measures and maps water bodies to determine
+            depths, seabed features, and underwater obstacles—essential for safe
+            navigation, marine construction, dredging, and environmental
+            protection.
           </p>
         </div>
       </section>
@@ -117,8 +118,12 @@ export default function HydrographicSurveying() {
                 </div>
                 <div className="p-8">
                   <Icon className="w-12 h-12 text-[#4A7E51] mb-4" />
-                  <h3 className="text-2xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{service.desc}</p>
+                  <h3 className="text-2xl font-semibold mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed">
+                    {service.desc}
+                  </p>
                 </div>
               </div>
             );
@@ -185,7 +190,8 @@ export default function HydrographicSurveying() {
             <div className="bg-gray-50 p-8 rounded-2xl shadow-md">
               <ul className="space-y-4 text-left text-gray-700">
                 <li className="flex items-center">
-                  <span className="mr-3">•</span> Bathymetric charts & depth contours
+                  <span className="mr-3">•</span> Bathymetric charts & depth
+                  contours
                 </li>
                 <li className="flex items-center">
                   <span className="mr-3">•</span> Digital terrain models (DTM)

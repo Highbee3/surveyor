@@ -3,7 +3,8 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Image from "next/image";   // ✅ FIXED — required for <Image />
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Projects() {
   useEffect(() => {
@@ -13,27 +14,34 @@ export default function Projects() {
   const projects = [
     {
       title: "Drone Mapping for Construction",
-      description: "High-precision aerial survey and mapping for a major construction site.",
+      description:
+        "High-precision aerial survey and mapping for a major construction site.",
       image:
         "https://res.cloudinary.com/dlzjjxtsd/image/upload/drone-surveying-land-surveyor-gnss-drone_prundy.png",
+        slug: "/services/geospatial",
     },
     {
       title: "Boundary Survey – Residential Estate",
       description: "Full boundary demarcation and property verification.",
       image:
         "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_7068_l8iged.jpg",
+        slug: "/services/boundary",
     },
     {
       title: "Topographic Survey – Land Development",
-      description: "Contour mapping and terrain modeling for land use planning.",
+      description:
+        "Contour mapping and terrain modeling for land use planning.",
       image:
         "https://res.cloudinary.com/dlzjjxtsd/image/upload/zcm66k19aixqgkuduqhk.jpg",
+        slug: "/services/topographic-survey",
     },
     {
       title: "GIS Mapping Project",
-      description: "Geospatial analysis and map visualization for urban planning.",
+      description:
+        "Geospatial analysis and map visualization for urban planning.",
       image:
         "https://res.cloudinary.com/dlzjjxtsd/image/upload/industry_GIS_1_psla9i.jpg",
+        slug: "/services/geospatial",
     },
   ];
 
@@ -58,7 +66,8 @@ export default function Projects() {
             data-aos-delay="200"
             className="text-lg md:text-xl text-gray-300 max-w-2xl mt-4"
           >
-            A collection of professional surveying, mapping, and engineering projects we&apos;ve delivered.
+            A collection of professional surveying, mapping, and engineering
+            projects we&apos;ve delivered.
           </p>
         </div>
       </section>
@@ -96,9 +105,12 @@ export default function Projects() {
                 <h3 className="text-2xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-300">{project.description}</p>
 
-                <button className="mt-4 bg-[#C62127] px-5 py-2 rounded-full font-medium hover:bg-[#A51B1E] transition">
+                <Link
+                  href={project.slug}
+                  className="inline-block mt-4 bg-[#C62127] px-5 py-2 rounded-full font-medium hover:bg-[#A51B1E] transition"
+                >
                   View Details
-                </button>
+                </Link>
               </div>
             </div>
           ))}
