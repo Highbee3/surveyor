@@ -43,6 +43,24 @@ export default function Projects() {
         "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_0186_rulqk2.jpg",
       slug: "/services/geospatial",
     },
+        {
+        title: "Hydrographic Surveying",
+        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_7078_dvyd1u.jpg",
+        description:"Mapping underwater terrain and depths - delivering essential data for navigation, dredging, coastal engineering, and marine projects.",
+        slug: "/services/hydrographics",
+      },
+        {
+        title: "Control Survey",
+        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20250713-WA0039_j50d1y.jpg",
+        description:"Establishing reliable reference points - the foundation for accurate mapping, construction, and future surveys across any site.",
+        slug: "/services/hydrographics",
+      },
+        {
+        title: "Monumentation / Boundary Demarcation",
+        image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_7068_l8iged.jpg",
+        description:"Defining and marking precise property boundaries - protecting rights, resolving disputes, and ensuring secure land ownership.",
+        slug: "/services/hydrographics",
+      },
   ];
 
   return (

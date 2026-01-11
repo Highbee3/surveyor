@@ -164,6 +164,7 @@ export default function Home() {
         image: "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG-20260107-WA0022_fkgdie.jpg",
         description:"Comprehensive topographic survey capturing land contours, elevations, and features to inform site development plans."
       },
+  
     ].map((project, i) => (
       <div
         key={i}
