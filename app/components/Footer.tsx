@@ -17,8 +17,8 @@ export default function Footer() {
           {/* Logo */}
           <div className="h-16 w-auto">
             <Image
-              src="https://res.cloudinary.com/dlzjjxtsd/image/upload/Screenshot_26_uz8qyw.png"
-              alt="Highbee Logo"
+              src="https://res.cloudinary.com/dlzjjxtsd/image/upload/KOASS_n3_vukp6s.png"
+              alt="KOASS Logo"
               width={150}
               height={150}
               className="h-full w-auto object-contain"
@@ -57,8 +57,8 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <ul className="space-y-2 text-gray-300">
-            <li className="flex items-center gap-2"> <MdLocationPin className="text-yellow-400"/> Lagos, Nigeria</li>
-            <li className="flex items-center gap-2"><FaPhone className="text-yellow-400"/> +234 810 000 0000</li>
+            <li className="flex items-center gap-2"> <MdLocationPin className="text-yellow-400"/> Ogun, Nigeria</li>
+            <li className="flex items-center gap-2"><FaPhone className="text-yellow-400"/> +234 813 874 5624</li>
             <li className="flex items-center gap-2"><IoIosMail className="text-yellow-400"/> koassgeomaticsconsultsltd@gmail.com</li>
           </ul>
 

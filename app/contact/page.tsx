@@ -34,7 +34,7 @@ export default function Contact() {
               <FaPhoneAlt className="text-blue-400 text-xl mt-1" />
               <div>
                 <p className="font-medium">Phone</p>
-                <p className="text-gray-300">+234 808 000 0000</p>
+                <p className="text-gray-300">+234 813 874 5624</p>
               </div>
             </div>
 
