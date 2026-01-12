@@ -8,6 +8,11 @@ import Image from "next/image";
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const closeMenu = () => {
+  setMenuOpen(false);
+  setDropdownOpen(false);
+};
+
 
   return (
     <nav className="w-full bg-[#4A7E51] text-white shadow-md fixed top-0 z-50 p-1">
@@ -36,7 +41,7 @@ export default function Navbar() {
        
         <ul className="hidden md:flex space-x-8 text-x font-medium items-center">
           <li className="group relative">
-            <Link href="/" className="relative">
+            <Link href="/" onClick={closeMenu} className="relative">
               Home
               <span className="underline-hover"></span>
             </Link>
@@ -45,6 +50,7 @@ export default function Navbar() {
           <li className="group relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
+              
               className="flex items-center relative"
             >
               Services
@@ -55,52 +61,52 @@ export default function Navbar() {
             {dropdownOpen && (
               <ul className="absolute top-10 left-0 bg-white text-black shadow-md p-3 rounded-md w-56 space-y-2 animate-dropdown">
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/LandSurvey">Land Survey</Link>
+                  <Link href="/services/LandSurvey" onClick={closeMenu}>Land Survey</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/dronesurvey">Drone Survey</Link>
+                  <Link href="/services/dronesurvey" onClick={closeMenu}>Drone Survey</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/topographic-survey">
+                  <Link href="/services/topographic-survey" onClick={closeMenu}>
                     Topographic Survey
                   </Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/boundary">Boundary Mapping</Link>
+                  <Link href="/services/boundary" onClick={closeMenu}>Boundary Mapping</Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/hydrographics">
+                  <Link href="/services/hydrographics" onClick={closeMenu}>
                     Hydrographic Surveying
                   </Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/Engineering">
+                  <Link href="/services/Engineering" onClick={closeMenu}>
                     Engineering Surveying
                   </Link>
                 </li>
                 <li className="p-2 hover:bg-gray-200 rounded">
-                  <Link href="/services/geospatial">Geospatial Solutions</Link>
+                  <Link href="/services/geospatial" onClick={closeMenu}>Geospatial Solutions</Link>
                 </li>
               </ul>
             )}
           </li>
 
           <li className="group relative">
-            <Link href="/projects" className="relative">
+            <Link href="/projects" onClick={closeMenu} className="relative">
               Projects
               <span className="underline-hover"></span>
             </Link>
           </li>
 
           <li className="group relative">
-            <Link href="/equipment" className="relative">
+            <Link href="/equipment" onClick={closeMenu} className="relative">
               Equipment
               <span className="underline-hover"></span>
             </Link>
           </li>
 
           <li className="group relative">
-            <Link href="/contact" className="relative">
+            <Link href="/contact" onClick={closeMenu} className="relative">
               Contact
               <span className="underline-hover"></span>
             </Link>
@@ -120,7 +126,7 @@ export default function Navbar() {
       {menuOpen && (
         <ul className="md:hidden bg-[#4A7E51] p-4 space-y-4 animate-mobileMenu">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" onClick={closeMenu}>Home</Link>
           </li>
 
           <li>
@@ -134,44 +140,44 @@ export default function Navbar() {
             {dropdownOpen && (
               <ul className="ml-4 mt-2 space-y-2 bg-green-700 p-3 rounded animate-dropdown">
                 <li>
-                  <Link href="/services/LandSurvey">Land Survey</Link>
+                  <Link href="/services/LandSurvey" onClick={closeMenu}>Land Survey</Link>
                 </li>
                 <li>
-                  <Link href="/services/dronesurvey">Drone Survey</Link>
+                  <Link href="/services/dronesurvey" onClick={closeMenu}>Drone Survey</Link>
                 </li>
                 <li>
-                  <Link href="/services/topographic-survey">
+                  <Link href="/services/topographic-survey" onClick={closeMenu}>
                     Topographic Survey
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services/boundary">Boundary Mapping</Link>
+                  <Link href="/services/boundary" onClick={closeMenu}>Boundary Mapping</Link>
                 </li>
                 <li>
-                  <Link href="/services/hydrographics">
+                  <Link href="/services/hydrographics" onClick={closeMenu}>
                     Hydrographic Surveying
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services/engineering">
+                  <Link href="/services/engineering" onClick={closeMenu}>
                     Engineering Surveying
                   </Link>
                 </li>
                 <li>
-                  <Link href="/services/geospatial">Geospatial Solutions</Link>
+                  <Link href="/services/geospatial" onClick={closeMenu}>Geospatial Solutions</Link>
                 </li>
               </ul>
             )}
           </li>
 
           <li>
-            <Link href="/projects">Projects</Link>
+            <Link href="/projects" onClick={closeMenu}>Projects</Link>
           </li>
           <li>
-            <Link href="/equipment">Equipment</Link>
+            <Link href="/equipment" onClick={closeMenu}>Equipment</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact" onClick={closeMenu}>Contact</Link>
           </li>
         </ul>
       )}

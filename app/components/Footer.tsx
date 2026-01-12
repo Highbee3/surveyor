@@ -48,13 +48,10 @@ export default function Footer() {
               <Link href="/">Home</Link>
             </li>
             <li className="hover:text-white transition">
-              <Link href="/services">Services</Link>
+              <Link href="/services/LandSurvey">Services</Link>
             </li>
             <li className="hover:text-white transition">
               <Link href="/projects">Projects</Link>
-            </li>
-            <li className="hover:text-white transition">
-              <Link href="/about">About Us</Link>
             </li>
             <li className="hover:text-white transition">
               <Link href="/contact">Contact</Link>

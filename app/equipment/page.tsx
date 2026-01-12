@@ -64,7 +64,7 @@ export default function Equipment() {
   ];
 
   return (
-    <main className="min-h-screen bg-linear-to-b from-black/90 via-[#050505] to-black text-gray-100 px-6 py-16">
+    <main className="min-h-screen bg-linear-to-b from-black/90 via-[#050505] to-black text-gray-100 px-6 py-16 mt-10">
       {/* HERO */}
       <section className="max-w-6xl mx-auto text-center mb-12">
         <motion.h1
