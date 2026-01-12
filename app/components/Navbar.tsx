@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center h-20 px-4 md:px-8">
         <Link href="/" className="flex items-center gap-3">
           <Image
-            src="https://res.cloudinary.com/dlzjjxtsd/image/upload/KOASS_n3_vukp6s.png"
+            src="https://res.cloudinary.com/dlzjjxtsd/image/upload/KOASS_n3-removebg-preview_gsbcy2.png"
             alt="KOASS Geomatics"
             width={150}
             height={150}
