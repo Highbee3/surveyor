@@ -40,7 +40,7 @@ export default function Projects() {
       description:
         "Advanced GIS, drone mapping, and data integration - transforming spatial information into actionable insights for planning and decision-making.",
       image:
-        "https://res.cloudinary.com/dlzjjxtsd/image/upload/IMG_0186_rulqk2.jpg",
+        "https://res.cloudinary.com/dlzjjxtsd/image/upload/geo_image_ym6cfi.jpg",
       slug: "/services/geospatial",
     },
         {
